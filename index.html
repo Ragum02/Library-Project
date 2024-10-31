@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Library</title>
+    <script src="script/script.js" defer></script>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div id="title">
+    <h1>Library</h1>
+    <button class="open_container" type="submit">New Book</button>
+</div>
+    <div id="input_container">
+        <button class="close">X</button>
+        <input class="title" type="text" placeholder="Title">
+        <input class="author" type="text" placeholder="Author">
+        <input class="pages" type="text" placeholder="Pages">
+        <select class="read" name="read">
+            <option value="read">Already read</option>
+            <option value="not_read">Not read yet</option>
+        </select>
+        <button class="add" type="submit">Add</button>
+    </div>
+<div id="card_container">
+    <div class="book">
+        <span>Title: </span>
+        <span>Author: </span>
+        <span>Pages: </span>
+        <span>Read: </span>
+        <div class="card_buttons">
+        <button class="change">Change State</button>
+        <button class="remove"><img src="assets/icons/trash.svg" alt="Trash"></button>
+    </div>
+
+    </div>
+    <div class="book"></div>
+    <div class="book"></div>
+    <div class="book"></div>
+    <div class="book"></div>
+</div>
+
+</body>
+</html>
