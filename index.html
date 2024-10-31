@@ -12,34 +12,21 @@
     <h1>Library</h1>
     <button class="open_container" type="submit">New Book</button>
 </div>
-    <div id="input_container">
-        <button class="close">X</button>
+<dialog id="input_dialog">
+    <form method="dialog" id="input_container">
         <input class="title" type="text" placeholder="Title">
         <input class="author" type="text" placeholder="Author">
-        <input class="pages" type="text" placeholder="Pages">
+        <input class="pages" type="number" placeholder="Pages">
         <select class="read" name="read">
-            <option value="read">Already read</option>
-            <option value="not_read">Not read yet</option>
-        </select>
+            <option value="Already read">Already read</option>
+            <option value="Not read yet">Not read yet</option>
+        </select>        
+        <div>
         <button class="add" type="submit">Add</button>
+        <button class="close">Cancel</button>
     </div>
-<div id="card_container">
-    <div class="book">
-        <span>Title: </span>
-        <span>Author: </span>
-        <span>Pages: </span>
-        <span>Read: </span>
-        <div class="card_buttons">
-        <button class="change">Change State</button>
-        <button class="remove"><img src="assets/icons/trash.svg" alt="Trash"></button>
-    </div>
-
-    </div>
-    <div class="book"></div>
-    <div class="book"></div>
-    <div class="book"></div>
-    <div class="book"></div>
-</div>
-
+    </form>
+</dialog>
+<div id="books_container">
 </body>
 </html>

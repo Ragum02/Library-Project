@@ -16,25 +16,25 @@ body{
     height: 70px;
 }
 .close{
-    border-radius: 50%;
-    background:#9FC088;
-    height: 20px;
-    width: 20px;
-    align-self: flex-end;
+    background:#9FC088 !important;
 }
 #input_container{
-    visibility: hidden;
-    position: absolute;
-    width: 20vw;
-    height: 30vh;
-    margin:50px auto;
-    padding:25px;
     gap: 15px;
     display: flex;
     flex-direction: column;
 }
+#input_dialog{
+    width: 20vw;
+    height: 20vh;
+    background-color: #E8C07D;
+    padding:25px;
+    margin:auto;
 
-input,select,.add,.open_container{
+}
+input{
+    padding:7px;
+}
+input,select,.add,.close,.open_container{
     color:#6C4E31;
     font-size: 20px;
     height: 50px;
@@ -51,15 +51,16 @@ input,select,.add,.open_container{
 .author,.read{
     grid-column: 3;
 }
-.add{
-    grid-column: 2;
-    grid-row: 3;
+.add,.close{
     font-weight: 800;
-    min-height: 100px ;
+    width: 100px;
+
 }
 
-#card_container{
+#books_container{
     display: flex;
+    flex-wrap: wrap;
+    gap:30px;
     padding: 20px;
     justify-content: space-around;
 }
@@ -75,15 +76,16 @@ input,select,.add,.open_container{
     flex-direction: column;
     justify-content: center;  
     gap:30px; 
+    padding:25px;
 }
-div > .change{
+.change{
     border:none;
     background: none;
     color:#CC704B;
     font-size: 25px;
     font-weight: 600;
 }
-div > .change:hover{
+.change:hover{
     color:#9FC088;
 
 }
@@ -98,7 +100,7 @@ input,select,.add,.book{
     box-shadow: 2px 5px 20px 2px rgba(0, 0, 0, 0.527);
 }
 
-div > .remove{
+.remove{
     background: none;
     border:none;
 }
@@ -110,7 +112,10 @@ div > .remove{
     display: flex;
     justify-content: space-between;
 }
-
+.book > div {
+    display: flex;
+    justify-content: space-between;
+}
 
 
 
