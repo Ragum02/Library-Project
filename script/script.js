@@ -14,7 +14,7 @@ const changeState = document.querySelector(".change");
 
 const booksContainer = document.querySelector("#books_container");
 
-class Book(title,author,pages,read){
+class Book{
     constructor(title,author,pages,read){
         this.title = title;
         this.author = author;
